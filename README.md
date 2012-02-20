@@ -133,11 +133,12 @@ Here are the correspondences between Json & RichJson syntax :
 
 * `:` is replaced by `\:`
 * `{ k : "v" }` is replaced by `( "k" \: "v" )`
+* `{ k1 : "v1", k2 : "v2" }` is replaced by `( "k1" \: "v1" ++ "k2" \: "v2" )`
 * `[ v1, v2, v3 ]` is replaced by `( v1 @@ v2 @@ v3 )`
 
 RichJson returns a classic Play2/Scala _JsObject_
 
     val richJson:JsObject = "key" \: "value"
-
+    val richJsonArray:JsArray = "k1" @@ 23 @@ "k2"
 
 Have Fun
