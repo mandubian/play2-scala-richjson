@@ -1,4 +1,4 @@
-`# Play2 Rich Json Tool
+# Play2 Rich Json Tool
 
 > Some sugar syntax to write your Play2/Scala JSON in a more compact way 
 
